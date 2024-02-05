@@ -37,7 +37,7 @@ if (!GPT_MODE) {
     GPT_MODE = "CHAT"
 }
 if (!HISTORY_LENGTH) {
-    HISTORY_LENGTH = 5
+    HISTORY_LENGTH = 10
 }
 if (!OPENAI_API_KEY) {
     console.log("No OPENAI_API_KEY found. Please set it as environment variable.")
@@ -79,7 +79,7 @@ if (!ENABLE_CHANNEL_POINTS) {
 }
 
 // init global variables
-const MAX_LENGTH = 399
+const MAX_LENGTH = 300
 let file_context = "You are a helpful Twitch Chatbot."
 let last_user_message = ""
 
